@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background: rgba(0,0,0,0.5) url('background-img.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.address{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.address i{
+    margin-left: 20px;
+}
+.address h6{
+    margin-left: 10px;
+}
+.links a{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: white;
+}
+.links a:hover{
+    color: #41a7ba;
+}
+hr{
+    color: white;
+    width: 96%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo a img{
+    height: 50px;
+    width: 50px;
+}
+.logo h1{
+    margin-left: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.menu{
+    flex: 1;
+    text-align: right;
+}
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 12px;
+    position: relative;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+.menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #41a7ba;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width: 100%;
+}
+.home{
+    padding: 10% 6%;
+}
+.home-content{
+    width: 54%;
+    color: white;
+}
+.home-content h3{
+    font-size: 30px;
+}
+.home-content h1{
+    font-size: 60px;
+}
+.home-content span{
+    color: #41a7ba;
+}
+.home-content p{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.home-content a{
+    text-decoration: none;
+    padding: 9px 30px;
+    border-radius: 4px;
+    
+}
+.home-content .btn{
+    background-color: #41a7ba;
+    color: white;
+}
+.home-content .btn:hover{
+    background-color: white;
+    color: black;
+}
+@media (max-width : 700){
+    .home-content h1{
+        font-size: 20px;
+    }
+    .home-content{
+        width: 100%;
+        color: white;
+    }
+    .address{
+        font-size: 20px;
+    }
+    .address i{
+        display: none;
+    }
+}
